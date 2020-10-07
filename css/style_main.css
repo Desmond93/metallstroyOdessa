@@ -1,0 +1,1768 @@
+/*цвет всего сайта*/
+body { 
+	background-color: #154D71;
+	position: relative;
+	z-index: 0;
+	height: auto;
+}
+/*заглушка для експлорера*/
+.ie {
+	background-color: white;
+	color: black;	
+	position: fixed;
+	z-index: 9999;
+	width: 100%;
+	height: 100%;
+}
+
+.ie p {
+	font-size: 80px;
+}
+
+#p_prldr{
+position: fixed;
+left: 0;
+top: 0;
+right:0;
+bottom:0;
+background: #154D71;
+z-index: 30;}
+
+.contpre small {
+	font-size:25px;
+}
+
+.contpre {
+	width: 250px;
+	height: 100px;
+	position: absolute;
+	left: 50%;top: 48%;
+	margin-left:-125px;
+	margin-top:-75px;
+	color:#fff;
+	font-size:40px;
+	letter-spacing:-2px;
+	text-align:center;
+	line-height:35px;
+}
+/*контейнер с фисированной кнопкой справа*/
+.fixed_button {
+	width: 100%;
+	height: 0px;
+	text-align: right;	
+	position: fixed;
+	bottom: 220px;
+	padding-right: 10%;
+	z-index: 9999;
+}
+/*фиксированная кнопка справа*/
+.fixed_button img{
+	height: 100px;
+}
+/*пульсация фиксированной кнопки справа*/
+.pulse {   
+  -webkit-box-shadow: 0 0 0 rgba(204,169,44, 0.4);   
+          box-shadow: 0 0 0 rgba(204,169,44, 0.4);
+  -webkit-animation: pulse 1s infinite;
+          animation: pulse 1s infinite;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+            box-shadow: 0 0 0 0 rgba(204,169,44, 0.4);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+              box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+              box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+  }
+}
+/*контейнер с сообщением, всплывающим при клике на фиксированную кнопку*/
+.message_cont {
+	width: 100%;
+	height: 100%;
+	background-color: rgb(0,0,0,0.4);
+	text-align: left;
+	position: absolute;
+	z-index: -1000;
+	padding-top: 10%;
+}
+/*сообщение при клике на фиксированную кнопку*/
+.message {
+	width: 70%;
+	height: 0;
+	background-color: white;
+	margin: 0 auto;	
+	padding: 20px;
+	position: relative;
+	top: -400px;		
+}
+
+.message h5 {
+	color: #154D71;
+	font-size: 18px;
+	margin: 0;
+}
+
+.message p {
+	font-size: 13px;
+	line-height: 1.2;
+	margin: 0;
+	padding-bottom: 10px;
+}
+/*параметры первой секции*/
+.first {	
+	height: auto;			
+}
+/*контейнер с видео*/
+.fullscreen-bg {
+    overflow: hidden;
+    z-index: -100;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding-top:45%;
+    background: url(../img/main_first_fon.png);
+    background-repeat: no-repeat;
+	-webkit-background-size: 100% 650px;
+}
+ /*видео*/
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+/*скрытое меню*/
+.first .menu { 
+	background-color: #154D71;		
+	position: fixed;
+	width: 100%;
+	height: 71px;
+	padding: 0;
+	margin: 0;
+	z-index: 5;
+	top: -700px;
+	text-align: center;
+}
+/*эффект параллакса*/
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+}
+/*заголовок скрытого меню*/
+.first .menu h2 {
+	font-size: 30px;
+	font-family: "CorvetteDeco";
+	color: rgb(255, 255, 255);
+	line-height: 0.9;
+	text-transform: uppercase;
+	padding-top: 10px;
+}
+/*название фирмы в скрытом меню*/
+.first .menu p {
+	font-size: 15px;
+	font-family: "IsolatSSi";
+	color: rgba(255, 255, 255, 0.87);
+	line-height: 0.9;
+	text-transform: uppercase;
+}
+/*верхняя линия с лого и названием фирмы*/
+.first .top_line {
+	background: -webkit-linear-gradient(top, rgba(21, 77, 113,1), rgba(21, 77, 113,0.97));
+	padding: 40px 80px 35px 80px;	
+	width: 100%;	
+	text-align: center;
+}
+/*ширина линии*/
+.first .top_line .row {
+	width: 100%;	
+}
+/*размер лого и Дюка*/
+.first .top_line img {
+	height: 150px;
+}
+/*поле с тексто в верхней линии*/
+.first .top_line .text {
+	text-align: center;			
+	padding-top: 50px;
+}
+/*Название фирмы*/
+h1 {
+	font-size: 90px;
+	font-family: "CorvetteDeco";
+	color: rgb(255, 255, 255);
+	line-height: 0.9;
+	text-transform: uppercase;
+	height: auto;	
+	padding: 0;
+	margin: 0 0;		
+}
+/*тип фирмы*/
+.top_line p {
+	font-size: 24px;
+	font-family: "IsolatSSi";
+	color: rgba(255, 255, 255, 0.87);
+	line-height: 0.9;
+	text-transform: uppercase;
+	height: auto;
+	padding: 0;
+	margin: 0;
+}
+/*контейнер обертка навигационного меню*/
+.first .top_menu {
+	height: 400px;
+}
+/*навигационное меню*/
+.first .top_line_menu {
+	padding: 0 0 0 100px;
+	margin: 0;	
+}
+/*обёртки пунктов навигационного меню*/
+.first .cont, .first .cont_services {
+	padding: 0 0 0 20px;
+	text-align: center;
+	overflow: hidden;					
+}
+/*высота пунктов навигационного меню*/
+.first .cont {
+	height: 72px;
+}
+/*пункты навигационного меню*/
+.first .main, .first .services, .first .contacts {
+	background-color: #154D71;
+	opacity: 0.9; 
+	padding: 20px 0;
+	text-transform: uppercase;
+	font-size: 26px;
+	font-family: "IsolatSSi";
+	color: rgba(255, 255, 255, 0.78);
+	line-height: 1.2;
+	display: inline-block; 	
+	text-decoration: none;
+	-webkit-transition: all 0.35s ease;
+	width: 100%;	
+}
+
+.first .menu .cont, .first .menu .cont_services {
+	padding: 0;
+}
+/*псевдоклассы нав. меню*/
+.main:before, .main:after,
+.services:before, .services:after,
+.contacts:before, .contacts:after {
+  	position: absolute;  
+}
+
+.main:after,
+.services:after,
+.contacts:after {  	  
+  	top: 100%;
+  	left: 0;
+  	content: attr(data-hover);
+  	color: white; 
+  	background-color: #e8bb74;
+  	padding: 20px 0;
+  	width: 100%;
+}
+/*вращение пнктов нав. меню при наведении*/
+.cont:hover .main,
+.cont_services:hover .services,
+.cont:hover .contacts {
+  	-webkit-transform: translateY(-100%);
+  	    -ms-transform: translateY(-100%);
+  	        transform: translateY(-100%);
+}
+/*выпадающий список услуг*/
+.first .dropdown_content {
+	display: none;
+	position: relative;
+	z-index: 50;
+}
+/*пункты выпадающего списка*/
+.first .dropdown_content_item {
+	background-color: #4091a2;		 
+	width: 100%;
+	border-top: 1px solid rgb(45, 64, 97);
+	position: relative;
+	z-index: 50;		
+}
+/*прозрачность выпадающего списка*/
+.top_line_menu .dropdown_content_item {
+	opacity: 0.9; 
+}
+/*ссылки выпадающего списка*/
+.first .dropdown_content a {	
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 17px;
+	font-family: "IsolatSSi";
+	color: rgba(255, 255, 255, 0.749);
+	line-height: 1.2;
+	width: 100%;
+	height: 100%;
+	padding: 10px 20px;
+	display: inline-block;
+}
+/*выпадающий список при наведении на услуги*/
+.first .menu .cont_services:hover {	
+	overflow: visible;
+}
+
+.first .cont_services:hover .dropdown_content {
+	display: block;
+}
+/*изменение цвета пунктов нав. меню*/
+
+/*изменение цаета пунктов выпадающего списка*/
+.first .dropdown_content_item:hover {
+	background-color: #E9C996;
+}
+/*вторая секция*/
+.first_second {
+	height: 900px;
+	padding: 0;
+}
+
+/*большой синий контейнер*/
+.cont_big {
+	background: -webkit-linear-gradient(top, rgba(21, 77, 113,1), rgba(21, 77, 113,0.9));
+	opacity: 1;
+	width: 100%;
+	height: auto;	
+	padding: 50px 35px 35px 35px;
+}
+/*заголовок синего контейнера*/
+.cont_big_headline {
+	margin: 0 auto;
+	text-align: center;
+	font-size: 26px;
+	font-family: "IsolatSSi";
+	color: rgb(255, 255, 255);
+	line-height: 1.2;
+}
+/*текст под заголовком*/
+.cont_big .text_top {
+	padding-top: 40px;
+	font-size: 16px;
+	font-family: "Century Gothic";
+	color: rgba(255, 255, 255, 0.8);
+	line-height: 1.2;
+	text-align: justify;
+	text-indent: 33px;	
+}
+/*текст справа*/
+.cont_big .text_right {
+	padding-top: 20px;
+	font-size: 16px;
+	font-family: "Century Gothic";
+	color: rgb(255, 255, 255);
+	line-height: 1.8;
+	text-align: justify;
+	text-indent: 33px;
+}
+/*таблица слева*/
+table {
+	padding-top: 20px;
+	border-collapse: inherit;
+	border-spacing: 7px 5px;
+	width: 100%;
+}
+/*пункты таблицы*/
+table .item {
+	font-size: 20px;
+	font-family: "Century Gothic";
+	color: rgba(254, 254, 254, 0.749);
+	line-height: 1.2;
+	text-align: justify;
+	background-color: #4091a2;
+	padding: 0;		
+}
+
+table .item a {
+	padding: 40px 15px;
+}
+/*рисунки в таблице*/
+table .number {
+	font-size: 18px;
+	font-family: "IsolatSSi";
+	color: rgba(255, 255, 255, 0.749);
+	line-height: 1.2;
+	text-align: center;
+	background-color: #4091a2;		
+}
+
+table .number a {
+	padding: 20px 15px;
+}
+
+table td {
+	height: auto;	
+	padding: 0 0 0 0;
+}
+/*изменение цвета пунктов*/
+table td:hover {
+	background-color: #E9C996;
+}
+/*цвет текста в таблице*/
+table a {
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.749);	
+	display: block;
+	
+	width: 100%;
+	height: 100%;
+}
+
+table a:hover {
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.749);
+}
+/*параметры третьей секции*/
+.second {	
+	height: 700px;
+	padding: 0;
+}
+/*контейнеры в 3-5 секциях*/
+.second .cont, .third .cont, 
+.fourth .cont, .services_second_cont {
+	width: 100%;
+	height: 400px;
+	opacity: 1;
+	text-align: center;
+	padding: 60px;	  		 
+}
+/*градиент прозрачности перовго контейнера*/
+.second .cont {		
+	background: -webkit-linear-gradient(top, rgba(64, 145, 162,1), rgba(64, 145, 162,0.9));			 
+}
+/*заголовки контейнеров*/
+.second .headline, .third .headline, 
+.fourth .headline, .services_second .headline,
+.services_third .headline {
+	font-size: 26px;
+	font-family: "IsolatSSi";
+	color: rgba(254, 254, 255, 0.749);
+	line-height: 1.2;
+}
+/*текст в контейнерах*/
+.second .text, .third .text, 
+.fourth .text, .services_second .text {
+	font-size: 26px;
+	font-family: "Century Gothic";
+	color: rgba(254, 254, 255, 0.749);
+	line-height: 1.2;
+	margin: 50px 0;	
+}
+/*кнопки в контейнерах*/
+.second .button, .third .button, 
+.fourth .button, .contacts_main .contacts_button {
+	background-color: #e8bb74;	
+	width: 30%;
+	padding: 20px 0;
+	margin: 0 auto;	
+	text-decoration: none;
+	display: block; 
+	font-size: 20px;
+	font-family: "IsolatSSi";
+	color: rgb(26, 52, 84);
+	line-height: 1.2;
+}
+/*изменение цвета кнопок при наведении*/
+.second .button:hover, .third .button:hover, 
+.fourth .button:hover, 
+.contacts_main .contacts_button:hover {
+	background-color: #ff9c00;	
+}
+/*высота четвёртой секции*/
+.third {	
+	height: 700px;
+	padding: 0;
+}
+/*градиент прозрачности второго контейнера*/
+.third .cont {
+	background: -webkit-linear-gradient(top, rgba(21, 77, 113,1), rgba(21, 77, 113,0.9));
+}
+/*высота пятой секции*/
+.fourth{	
+	height: auto;
+	padding: 0;
+}
+/*градиент прозрачности и отступ третьего контейнера*/
+.fourth .cont {
+	background: -webkit-linear-gradient(top, rgba(64, 145, 162,1), rgba(64, 145, 162,0.9));
+	margin-bottom: 150px;
+}
+/*кнопка "другие услуги"*/
+.fourth .button_last, .services_top_button {
+	background-color: #3D94CA;
+	opacity: 0.9;	
+	width: 35%;
+	padding: 30px 0;
+	text-align: center;
+	margin: 0 auto;	
+	margin-bottom: 150px;
+	text-decoration: none;
+	display: block; 
+	font-size: 25px;
+	font-family: "IsolatSSi";
+	color: rgba(255, 255, 255, 0.749);
+	line-height: 1.2;
+	-webkit-box-shadow: 0px 7px 7px 0px rgba(0, 0, 0, 0.61);
+	box-shadow: 0px 7px 7px 0px rgba(0, 0, 0, 0.61);	
+}
+
+.services_top_button {
+	padding: 30px 15px;
+}
+/*изменение цвета кнопки при наведении*/
+.fourth .button_last:hover {
+	background-color: #E1BE85;
+	color: rgb(69, 88, 113);
+	text-decoration: none;
+}
+/*подвал сайта*/
+.footer {
+	background-color: rgb(21, 77, 113);
+	opacity: 0.9;
+	width: 100%;
+	height: auto;
+	padding: 50px 60px;
+}
+/*текст слева в подвале*/
+.footer .left {
+	font-size: 20px;
+	font-family: "Century Gothic";
+	color: rgba(255, 255, 255, 0.6);
+	line-height: 1.2;
+}
+/*текст справа в подвале*/
+.footer .right {
+	font-size: 20px;
+	font-family: "Century Gothic";
+	color: rgba(255, 255, 255, 0.2);
+	line-height: 1.2;
+	text-align: right;
+}
+/*параметры якорей, ведущих из таблицы*/
+.anchor {
+	margin-top: 60px;
+}
+
+
+
+/*страницы услуг*/
+.services_first {	
+	height: auto;	
+}
+/*прозрачность верхней линии*/
+.services_first .top_line,
+.contacts_main .top_line {	
+	background: rgb(21, 77, 113);
+	opacity: 0.9;
+}
+
+.services_first .top_menu {
+	height: 400px;
+}
+/*сонтейнер с заголовком*/
+.servuces_top_button_cont {
+	position: absolute;
+	top: 425px;
+	width: 100%;
+}
+/*заголовок*/
+.services_top_button {		
+	margin-bottom: 0;
+	width: 70%;
+}
+/*плавающая таблица слева*/
+.services_table_cont table {
+	border-spacing: 0 1px;
+	width: auto;
+	position: fixed;
+	top: 205px;	
+	z-index: 100;	
+}
+/*ширина столбца с рисунками*/
+.services_table_cont .number {
+	width: 60px;
+}
+/*параметры столбца с подсказками*/
+.services_table_cont .item {
+	display: none;
+	width: 150px;
+}
+/*появление подсказок при наведении на таблицу*/
+.services_table_cont tr:hover .item {
+	display: table-cell;
+}
+/*внутренние отступы ссылок*/
+.services_table_cont .number a,
+.services_table_cont .item a {
+	padding: 5px 5px;
+}
+/*цвет и параметры текста в таблице*/
+.services_table_cont td {
+	text-transform: uppercase;
+	text-align: center;
+	background-color: #3D94CA;
+}
+/*размер рисунков*/
+.services_table_cont img {
+	width: 80%;
+}
+/*параметры второй секции*/
+.services_second {	
+	height: auto;
+	padding-top: 0;
+	padding-bottom: 200px;
+}
+
+.services_second_cont {
+	background-color: rgb(21, 77, 113);
+	opacity: 0.9;
+	height: auto;	
+}
+
+.services_second_cont .text {
+	text-align: justify;
+	text-indent: 20px;
+	font-size: 18px;
+	line-height: 1.4;
+}
+/*параметры третьей секции*/
+.services_third {
+	padding: 0 0 100px 0;
+}
+/*параметры контейнера в третьей секции*/
+.services_third_cont {
+	padding: 50px 40px 0 40px;
+	text-align: center;
+	background: -webkit-linear-gradient(top, rgba(21, 77, 113,1), rgba(21, 77, 113,0.8));
+}
+
+.services_third_cont .headline {
+	padding: 0 0 50px 0;
+}
+/*ссылки на вложенные страницы*/
+.services_third_cont a {
+	text-decoration: none;
+}
+
+.services_third_cont_item {
+	padding-bottom: 80px;
+}
+/*фото работ*/
+.services_third_cont_item_img {
+	padding-top: 15%;
+	width: 100%;	 
+}
+
+.services_third_cont_item_img_1 {
+	background: url(../img/Services_photo_1.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+}
+
+.services_third_cont_item_img_2 {
+	background: url(../img/Services_photo_2.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+}
+
+.services_third_cont_item_img_3 {
+	background: url(../img/Services_photo_3.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+}
+
+.services_third_cont_item_img_4 {
+	background: url(../img/Services_photo_4.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+}
+
+.services_third_cont_item_img_5 {
+	background: url(../img/Services_photo_5.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+}
+
+.services_third_cont_item_img_6 {
+	background: url(../img/Services_photo_6.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+}
+
+.services_third_cont_item_img_7 {
+	background: url(../img/Services_photo_7.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+}
+
+.services_third_cont_item_img_8 {
+	background: url(../img/Services_photo_8.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+}
+
+.services_third_cont_item_img_9 {
+	background: url(../img/Services_photo_9.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+}
+
+.services_third_cont_item_img_10 {
+	background: url(../img/Services_photo_10.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+}
+
+.services_third_cont_item_img_11 {
+	background: url(../img/Services_photo_11.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+}
+
+.services_third_cont_item_img_12 {
+	background: url(../img/Services_photo_12.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+}
+
+.services_third_cont_item_img_13 {
+	background: url(../img/Services_photo_13.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+}
+
+.services_third_cont_item_img_14 {
+	background: url(../img/Services_photo_14.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+}
+
+.services_third_cont_item_img_1_1 {
+	background: url(../img/frame_construction_building_min.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+}
+
+.services_third_cont_item_img_2_2 {
+	background: url(../img/frame_wood_construction_min.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+}
+
+.services_third_cont_item_img_3_3 {
+	
+background: url(../img/welding_9.kiosks_min.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+}
+
+.services_third_cont_item_img_0_1 {
+	background: url(../img/architecture_min.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+}
+
+.services_third_cont_item_img_0_2 {
+	background: url(../img/concrete_works_min.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+}
+
+.services_third_cont_item_img_0_3 {
+	background: url(../img/demolition_work_min.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+}
+
+.services_third_cont_item_img_0_4 {
+	background: url(../img/frame_construction_min.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+}
+
+.services_third_cont_item_img_0_5 {
+	background: url(../img/roofing_min.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+}
+
+.services_third_cont_item_img_0_6 {
+	background: url(../img/industrial_floors_min.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+}
+
+.services_third_cont_item_img_0_7 {
+	background: url(../img/reconstruction_min.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+}
+
+.services_third_cont_item_img_0_8 {
+	background: url(../img/renovation_of_apartments_min.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+}
+
+.services_third_cont_item_img_0_9 {
+	background: url(../img/welding_min.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+}
+
+.services_third_cont_item_img_0_10 {
+	background: url(../img/construction_services_min.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+}
+
+.services_third_cont_item_img_0_11 {
+	background: url(../img/foundation_construction_min.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+}
+
+.services_third_cont_item_img_0_12 {
+	background: url(../img/facade_work_min.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+}
+
+.services_third_cont_item:hover .services_third_cont_item_button {
+	z-index: -900;
+}
+
+.services_third_cont_item_hover {	
+	font-size: 24px;
+	font-family: "IsolatSSi";
+	color: rgb(255, 255, 255);
+	line-height: 1.2;
+	background-color: #efae47;
+	padding: 100px 0 100px 0;
+	position: relative;
+	bottom: -85px;	
+	opacity: 0;
+} 
+
+.services_third_cont_item:hover .services_third_cont_item_hover {
+	opacity: 0.8;
+}
+
+.services_third_cont_item_button {	
+	font-size: 18px;
+	font-family: "IsolatSSi";
+	color: rgb(255, 255, 255);
+	line-height: 1.2;
+	background-color: #3D94CA;
+	opacity: 0.8;
+	width: 70%;
+	margin: 0 auto;
+	padding: 30px 0 30px 0;
+	position: relative;
+	bottom: -40px;
+}
+/*параметры четвёртой секции*/
+.services_fourth {
+	width: 100%;	
+	height: 900px;
+	padding: 50px 150px 150px 150px;		
+    background: -webkit-linear-gradient(top, rgba(21, 77, 113,1), rgba(21, 77, 113,0.8));
+    
+}
+/*слайдер*/
+.swiper-container {
+    width: 100%;    
+    margin-left: auto;
+    margin-right: auto;    
+}
+.swiper-slide {
+    background-size: cover;
+    background-position: center;
+}
+.gallery-top {
+    height: 100%;
+    width: 100%;
+}
+.gallery-thumbs {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
+.gallery-top .swiper-slide {
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.gallery-thumbs .swiper-slide {
+    height: 100%;
+    opacity: 0.7;
+}
+.gallery-thumbs .swiper-slide-thumb-active {
+    opacity: 1;
+}
+/*высота секции с ценами*/
+.services_fifth {
+	padding-top: 150px;	
+	height: auto;
+}
+
+/*параметры синих блоков*/
+.header_price,
+.services_fifth_cont_01,
+.services_fifth_cont_02,
+.services_fifth_cont_03,
+.services_fifth_cont_1,
+.services_fifth_cont_2,
+.services_fifth_cont_3,
+.services_fifth_cont_4,
+.services_fifth_cont_5,
+.services_fifth_cont_6,
+.services_fifth_cont_7,
+.services_fifth_cont_8,
+.services_fifth_cont_9,
+.services_fifth_cont_10,
+.services_fifth_cont_11,
+.services_fifth_cont_12,
+.services_fifth_cont_13,
+.services_fifth_cont_14 {
+	background-color: rgb(21, 77, 113);
+	opacity: 0.9;
+	padding: 10px 0 10px 50px;
+	text-transform: uppercase;
+	font-size: 30px;
+	font-family: "IsolatSSi";
+	color: rgb(255, 255, 255);
+	line-height: 1.2;
+	width: 80%;
+	margin: 0 auto;
+}
+/*блок с заголовком секции*/
+.header_price {
+	width: 100%;
+	opacity: 1;
+	text-align: center;
+	margin: 50px 0;
+	background-color: rgb(21, 77, 113);
+	padding: 10px 0 10px 0;	
+}
+
+.services_fifth_without_photo .header_price {
+	margin-top: 0px;
+}
+
+/*внешние оступы синих блоков*/
+.services_fifth_cont_01,
+.services_fifth_cont_02,
+.services_fifth_cont_03,
+.services_fifth_cont_2,
+.services_fifth_cont_3,
+.services_fifth_cont_4,
+.services_fifth_cont_5,
+.services_fifth_cont_6,
+.services_fifth_cont_7,
+.services_fifth_cont_8,
+.services_fifth_cont_9,
+.services_fifth_cont_10,
+.services_fifth_cont_11,
+.services_fifth_cont_12,
+.services_fifth_cont_13,
+.services_fifth_cont_14 {
+	margin-top: 20px;
+}
+/*внутренние оступы синих блоков*/
+.services_fifth_cont_01 .text,
+.services_fifth_cont_02 .text,
+.services_fifth_cont_03 .text,
+.services_fifth_cont_1 .text,
+.services_fifth_cont_2 .text,
+.services_fifth_cont_3 .text,
+.services_fifth_cont_4 .text,
+.services_fifth_cont_5 .text,
+.services_fifth_cont_6 .text,
+.services_fifth_cont_7 .text,
+.services_fifth_cont_8 .text,
+.services_fifth_cont_9 .text,
+.services_fifth_cont_10 .text,
+.services_fifth_cont_11 .text,
+.services_fifth_cont_12 .text,
+.services_fifth_cont_13 .text,
+.services_fifth_cont_14 .text {
+	padding: 0;
+}
+/*скрытые голубые блоки*/
+.services_fifth_hiden_01,
+.services_fifth_hiden_02,
+.services_fifth_hiden_03,
+.services_fifth_hiden_1,
+.services_fifth_hiden_2,
+.services_fifth_hiden_3,
+.services_fifth_hiden_4,
+.services_fifth_hiden_5,
+.services_fifth_hiden_6,
+.services_fifth_hiden_7,
+.services_fifth_hiden_8,
+.services_fifth_hiden_9,
+.services_fifth_hiden_10,
+.services_fifth_hiden_11,
+.services_fifth_hiden_12,
+.services_fifth_hiden_13,
+.services_fifth_hiden_14 {
+	overflow:hidden; 
+	max-height:0px;
+	-webkit-transition:max-height 0s linear;
+	-o-transition:max-height 0s linear;
+	transition:max-height 0s linear;
+	width: 80%;
+	margin: 0 auto;
+	background-color: rgb(64, 145, 162);
+	opacity: 0.9;	
+}
+/*заголовки скрытх блоков*/
+.services_fifth_hiden_headline {	
+	font-weight: bold;
+	background-color: rgb(21, 77, 113);
+}
+/*внутренние контейнеры скрытых блоков*/
+.services_fifth_hiden_cont {	
+	font-size: 20px;
+	font-family: "IsolatSSi";
+	color: rgb(255, 255, 255);
+	line-height: 1.2;
+	padding: 10px 0 10px 40px;
+	border-top: 1px solid rgb(21, 77, 113);
+	margin: 0;
+}
+
+.services_fifth .arch .services_fifth_hiden_cont {
+	padding-left: 50px;
+}
+/*изменение прозрачности внутренних контейнеров*/
+.services_fifth_hiden_cont:hover {
+	background-color: #E9C996;
+	color: rgb(21, 77, 113); 
+}
+
+.services_fifth_hiden_headline:hover {
+	background-color: rgb(21, 77, 113);
+	color: rgb(255, 255, 255);
+}
+/*подвал на странице услуг*/
+.services_fifth .footer {
+	padding: 20px 60px;
+	margin-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+/*страница контактов*/
+.contacts_main {	
+    background-repeat: no-repeat;    
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+	height: auto;	
+}
+
+.contacts_main .first {
+	background: none;
+}
+/*карта*/
+.map {
+	text-align: center;
+	margin-bottom: 70px;
+	width: auto;
+	height: auto;
+}
+/*ссылка с картой*/
+iframe { /*размер карты*/
+	width: 80%;
+	height: 400px;
+	background: url(../img/Contacts_map.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;	 
+}
+/*голубой контейнер на странице контактов*/
+.contacts_main_contacts {
+	background-color: rgb(64, 145, 162);
+	-webkit-box-shadow: 0px 7px 7px 0px rgba(0, 0, 0, 0.61);
+	        box-shadow: 0px 7px 7px 0px rgba(0, 0, 0, 0.61);
+	opacity: 0.9;
+	width: 70%;
+	margin: 0 auto;
+	padding: 75px 0 25px 50px;
+}
+/*параметры текста в голубом контейнере*/
+.contacts_main_contacts p {
+	font-size: 31px;
+	font-family: "IsolatSSi";
+	color: rgb(254, 254, 255);
+	line-height: 1.2;
+	margin-bottom: 50px;
+	text-transform: uppercase;
+}
+/*оболочка двух контейнеров с почтовыми адресами*/
+.mails {	
+	text-align: justify;
+	margin: 70px 40px 70px 40px;
+}
+/*параметры контейнеров с почтовыми адресами*/
+.mails .left, .mails .right {
+	background-color: #154D71;	
+	height: 260px;
+	width: 100%;
+	opacity: 0.9;
+	padding: 0;
+	margin: 0;		
+}
+
+.mails .left_text, .mails .right_text {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	bottom: 50px;
+	padding: 0 20px;
+}
+/*парметры теста*/
+.mails .left p, .mails .right p {
+	font-size: 19px;
+	font-family: "IsolatSSi";
+	color: rgb(254, 254, 255);
+	line-height: 1.563;
+}
+
+.mails .right p {
+	padding-bottom: 30px;
+}
+/*параметры кнопок*/
+.mails .contacts_button {
+	width: 80%;
+	text-align: center;
+}
+/*подвал на странице "контакты"*/
+.contacts_main .footer {
+	padding: 20px 60px;
+}
+/*параметры текста в подвале*/
+.contacts_main .footer p {
+	margin: 0;
+}
+
+
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+    ::i-block-chrome,.first {
+    background: url(../img/main_first_fon.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;	
+    }
+
+    ::i-block-chrome,.services_first {
+    background: none;	
+    }
+
+    ::i-block-chrome,.services_fifth_hiden_1,
+    ::i-block-chrome,.services_fifth_hiden_2,
+    ::i-block-chrome,.services_fifth_hiden_3,
+    ::i-block-chrome,.services_fifth_hiden_4,
+    ::i-block-chrome,.services_fifth_hiden_5,
+    ::i-block-chrome,.services_fifth_hiden_6,
+    ::i-block-chrome,.services_fifth_hiden_7,
+    ::i-block-chrome,.services_fifth_hiden_8 {     
+	max-height: 9999px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+.first_main_page .top_menu {
+	height: 330px;
+}
+
+.message_cont {
+	padding-top: 5%;
+}
+
+h1 {
+	font-size: 70px;
+}
+
+.cont_big table {
+	padding-top: 15%;
+}
+
+.contacts_main_contacts p {
+	font-size: 25px;
+}
+
+.mails .left, .mails .right {
+	height: 300px;
+}
+
+.header_price,
+.services_fifth .text,
+.services_fifth .plus {
+	font-size: 26px;
+}
+
+}
+
+@media screen and (max-width: 1115px) {
+
+.services_third_cont_item_button {
+	font-size: 15px;
+}
+
+.services_third_cont_item_hover {
+	font-size: 20px;
+}
+
+}
+
+@media screen and (max-width: 1000px) {
+
+.fullscreen-bg {
+	display: none;
+    max-width: 0px;
+    max-height: 0px;    
+}
+
+.first_main_page {
+	background: url(../img/main_first_fon.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;	
+}
+
+}
+
+@media screen and (max-width: 992px) {
+
+.fixed_button {
+	padding-right: 5%;
+}
+
+.fixed_button img {
+	height: 70px;
+}
+
+.first .top_line {
+	padding: 10px;	
+}
+
+.first .top_line .row {
+	height: 100px;
+}
+
+.top_line .row .col-2, 
+.top_line .row .col-8 {
+	height: 100px;
+} 
+
+.first .dropdown_content, .first .dropdown_content_item {
+	max-height: 0;
+	border: none;
+	overflow: hidden;
+	font-size: 0;
+}
+
+.first .top_line .text {
+	padding-top: 30px;
+}
+
+h1 {
+	font-size: 55px;
+}
+
+.top_line p {
+	font-size: 15px;
+}
+
+.first .top_line img {
+	height: 100%;
+}
+
+.first .menu .text {
+	max-height: 0px;
+	overflow: hidden;
+}
+
+.first .top_line_menu {
+	padding: 0;
+}
+
+.first .cont, .first .cont_services {
+	padding: 0; 
+}
+
+.first .menu .cont_services:hover {	
+	overflow: hidden;
+}
+
+.first_second, .second, .third {
+	height: auto;
+	padding-bottom: 200px;
+}
+
+.cont_big table {
+	padding-top: 50px;
+}
+
+.second .cont, .third .cont, 
+.fourth .cont, .services_second_cont {
+	height: auto;
+	padding: 35px;
+}
+
+.services_third_cont_item_button {
+	font-size: 18px;
+}
+
+.second .button, .third .button, 
+.fourth .button {
+	width: 50%;
+}
+
+.fourth .button_last {
+	width: 60%;
+}
+
+.contacts_main .top_menu {
+	height: 200px;
+}
+
+iframe {
+	width: 90%;
+}
+
+.contacts_main_contacts {
+	width: 90%;
+}
+
+.mails {
+	margin: 0 auto;
+	padding: 50px 0;
+	width: 90%;
+}
+
+.mails .right {
+	margin-top: 50px;
+}
+
+.servuces_top_button_cont {
+	top: 300px;
+}
+
+.services_top_button {
+	width: 100%;
+}
+
+.services_second {
+	height: auto;
+}
+
+.services_fourth {
+	padding: 50px 40px;	
+}
+
+.gallery-top {
+	height: 80%;
+}
+
+}
+
+@media screen and (max-width: 768px) {
+
+.enorm_cont {
+	background: url(../img/Main2_min.png);
+	background-repeat: repeat-y;
+	-webkit-background-size: contain;
+}
+
+.first_second_main {
+	background: url(../img/Main2_min.png);
+	background-repeat: repeat-y;
+	-webkit-background-size: contain;
+}
+
+.second_main {
+	background: url(../img/Main3_min.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+}
+
+.third_main {
+	background: url(../img/Main4.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+}
+
+.fourth_main {
+	background: url(../img/Contacts.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+}
+
+.contacts_main {
+	background: url(../img/Contacts_min.png);
+	background-repeat: repeat-y;
+	-webkit-background-size: contain;
+}
+
+.message h5 {
+	color: #154D71;
+	font-size: 13px;
+}
+
+.message p {
+	font-size: 10px;
+	line-height: 1;
+}
+
+h1 {
+	font-size: 47px;
+}
+
+.cont_big_headline, .second .headline, .third .headline, 
+.fourth .headline, .services_second .headline,
+.services_third .headline {
+	font-size: 20px;
+}
+
+.second .text, .third .text, 
+.fourth .text, .services_second .text {
+	font-size: 20px;
+}
+
+.fourth .button_last, .services_top_button {
+	font-size: 20px;
+}
+
+.footer .left, .footer .right {
+	text-align: center;
+}
+
+.contacts_main_contacts {
+	padding: 75px 0 25px 10px;
+}
+
+.contacts_main_contacts p {
+	font-size: 20px;
+}
+
+.services_table_cont tr:hover .item {
+	display: none;
+}
+
+.services_top_button {
+	width: 120%;
+}
+
+.header_price,
+.services_fifth .text,
+.services_fifth .plus {
+	font-size: 20px;
+}
+
+.services_fifth_cont_01,
+.services_fifth_cont_02,
+.services_fifth_cont_03,
+.services_fifth_cont_1,
+.services_fifth_cont_2,
+.services_fifth_cont_3,
+.services_fifth_cont_4,
+.services_fifth_cont_5,
+.services_fifth_cont_6,
+.services_fifth_cont_7,
+.services_fifth_cont_8,
+.services_fifth_cont_9,
+.services_fifth_cont_10,
+.services_fifth_cont_11,
+.services_fifth_cont_12,
+.services_fifth_cont_13,
+.services_fifth_cont_14 {
+	padding: 10px 0 10px 10px;
+}
+
+.services_fifth_hiden_cont {
+	font-size: 15px;
+	padding: 10px 0;
+}
+
+.services_fifth .arch .services_fifth_hiden_cont {
+	padding-left: 10px;
+}
+
+.services_fourth {
+	height: 600px;	
+}
+
+.gallery-top {
+	height: 80%;
+}
+
+}
+
+@media screen and (max-width: 576px) {
+
+.fixed_button img{
+	height: 50px;
+}
+
+.message p {
+	line-height: 1;
+	padding-bottom: 5px;
+}
+
+.first .menu {
+	height: 50px;
+	max-height: 50px;
+}
+
+.first .top_line_menu {
+	height: 50px;
+}
+
+.first .cont, .first .cont_services {
+	height: 50px;
+}
+
+.first .main, .first .services, .first .contacts {
+	height: 50px;
+}
+
+.first .top_line .row {
+	height: 70px;	
+}
+
+.top_line .row .col-2, 
+.top_line .row .col-8 {
+	height: 70px;
+}
+
+h1 {
+	font-size: 30px;
+}
+
+.first .main, .first .services, .first .contacts {
+	padding: 10px 0;
+	font-size: 20px;
+}
+
+.main:after,
+.services:after,
+.contacts:after {  	
+  	padding: 10px 0;
+  	height: 50px;
+}
+
+.second .text, .third .text, 
+.fourth .tex, .services_second .text {
+	font-size: 15px;
+}
+
+.cont_big_headline, .second .headline, .third .headline, 
+.fourth .headline, .services_second .headline,
+.services_third .headline {
+	font-size: 17px;
+}
+
+table .item {
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+table .item a {
+	padding: 20px 10px;
+}
+
+.second .button, .third .button, 
+.fourth .button {
+	width: 70%;
+	font-size: 16px;
+}
+
+.services_third_cont_item_button {
+	font-size: 15px;
+}
+
+.services_fourth {
+	height: 500px;
+}
+
+.fourth .button_last {
+	width: 80%;
+}
+
+.fourth .button_last, .services_top_button {
+	font-size: 18px;
+	padding-left: 5px;
+	padding-right: 5px; 
+}
+
+.contacts_main_contacts p {
+	font-size: 17px;
+}
+
+.mails .left p,
+.mails .right p {
+	font-size: 17px;
+}
+
+.mails .left .contacts_button,
+.mails .right .contacts_button {
+	font-size: 17px;
+}
+
+.header_price,
+.services_fifth .text,
+.services_fifth .plus {
+	font-size: 17px;
+}
+
+.services_fifth_cont_01,
+.services_fifth_cont_02,
+.services_fifth_cont_03,
+.services_fifth_cont_1,
+.services_fifth_cont_2,
+.services_fifth_cont_3,
+.services_fifth_cont_4,
+.services_fifth_cont_5,
+.services_fifth_cont_6,
+.services_fifth_cont_7,
+.services_fifth_cont_8,
+.services_fifth_cont_9,
+.services_fifth_cont_10,
+.services_fifth_cont_11,
+.services_fifth_cont_12,
+.services_fifth_cont_13,
+.services_fifth_cont_14,
+.services_fifth_hiden_01,
+.services_fifth_hiden_02,
+.services_fifth_hiden_03,
+.services_fifth_hiden_1,
+.services_fifth_hiden_2,
+.services_fifth_hiden_3,
+.services_fifth_hiden_4,
+.services_fifth_hiden_5,
+.services_fifth_hiden_6,
+.services_fifth_hiden_7,
+.services_fifth_hiden_8,
+.services_fifth_hiden_9,
+.services_fifth_hiden_10,
+.services_fifth_hiden_11,
+.services_fifth_hiden_12,
+.services_fifth_hiden_13,
+.services_fifth_hiden_14 {	
+	width: 95%;
+}
+
+.footer .left, .footer .right {
+	font-size: 17px;
+}
+
+}
+
+@media screen and (max-width: 405px) {
+
+.message h5 {
+	color: #154D71;
+	font-size: 10px;
+}
+
+.message p {
+	font-size: 9px;
+}
+
+.first .top_line .text {
+	padding-left: 10%;
+}
+
+h1 {
+	font-size: 20px;
+}
+
+.top_line p {
+	font-size: 10px;
+}
+
+.first .menu {
+	height: 40px;
+}
+
+.first .cont, .first .cont_services {
+	height: 40px;
+}
+
+.first .main, .first .services, .first .contacts {	
+	font-size: 15px;
+	height: 40px;
+}
+
+.main:after,
+.services:after,
+.contacts:after {  	
+  	padding: 10px 0;
+  	height: 40px;
+}
+
+iframe {
+	width: 100%;
+}
+
+.contacts_main_contacts {
+	width: 100%;
+}
+
+.mails {	
+	width: 100%;
+}
+
+.contacts_main_contacts p {
+	font-size: 14px;
+}
+
+.cont_big_headline, .second .headline, .third .headline, 
+.fourth .headline, .services_second .headline,
+.services_third .headline {
+	font-size: 15px;
+}
+
+.services_table_cont .number {
+	width: 45px;
+}
+
+.services_fourth {
+	height: 380px;
+}
+
+.services_fifth_hiden_cont {
+	font-size: 10px;
+}
+
+}
